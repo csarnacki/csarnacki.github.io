@@ -1,0 +1,58 @@
+body {
+	background-color: #f2f2f2;
+}
+
+header {
+	background-color: #595959;
+	padding-bottom: 5em;
+	color: #ffffff;
+}
+
+footer {
+	background-color: #595959;
+	padding-top: 20px;
+	padding-bottom: 1px;
+	color: #ffffff;
+}
+
+#head p {
+	float: right;
+	margin-right: 20px;
+	margin-top: 30px;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
+
+#head h3 {
+	font-size: 36px;
+	margin-top: 10px;
+	margin-left: 50px;
+	padding-top: 1em;
+	font-family: Arial, sans-serif;
+}
+
+#phone {
+	margin-left: 700px;
+	padding-bottom: 2em;
+	margin-top: -45px;
+	font-size: 22px;
+}
+
+#email {
+	margin-left: 200px;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#linkedin {
+	margin-left: 1200px;
+	margin-top: -100px;
+	padding-bottom: 5em;
+}
+
+#github {
+	margin-left: 1300px;
+	margin-top: -125px;
+	padding-bottom: 4em;
+}
+
