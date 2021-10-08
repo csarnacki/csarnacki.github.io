@@ -1,0 +1,178 @@
+<! DOCTYPE html>
+<html>
+<title>JS Arrays & Loops</title>
+<body>
+<h1>Javascript Arrays & Loops</h1>
+
+<p><b>Using the .push() method in an array.</b></p>
+
+<p id="demo"></p>
+
+<script>
+let sports = ["football", "basketball", "baseball", "soccer", "hockey", "tennis", "volleyball"];
+
+document.getElementById("demo").innerHTML = sports;
+</script>
+
+<p id="demo1"></p>
+
+<script>
+let sports2 = ["football", "basketball", "baseball", "soccer", "hockey", "tennis", "volleyball"];
+sports2.push("swimming");
+
+document.getElementById("demo1").innerHTML = sports2;
+</script>
+<br>
+
+<p><b>Using the .pop() method in an array.</b></p>
+
+<p id="demo2"></p>
+
+<script>
+let month = ["March", "June", "July", "May", "April"];
+	
+document.getElementById("demo2").innerHTML = month;
+</script>
+
+<p id="demo3"></p>
+
+<script>
+let month2 = ["March", "June", "July", "May", "April"];
+month2.pop();
+
+document.getElementById("demo3").innerHTML = month2;
+</script>
+<br>
+
+<p><b>Obtaining a specific value from an array.</b></p>
+
+<p id="demo4"></p>
+
+<script>
+let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+document.getElementById("demo4").innerHTML = day;
+</script>
+
+<p id="demo5"></p>
+
+<script>
+let day2 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+document.getElementById("demo5").innerHTML = day2[3];
+</script>
+<br>
+
+<p><b>Returning the number of values in an array.</b></p>
+
+<p id="demo6"></p>
+
+<script>
+let animals = ["cat", "dog", "cow", "frog", "horse", "pig", "goat"];
+
+document.getElementById("demo6").innerHTML = animals;
+</script>
+
+<p id="demo7"></p>
+
+<script>
+let animals2 = ["cat", "dog", "cow", "frog", "horse", "pig", "goat"];
+
+document.getElementById("demo7").innerHTML = animals2.length;
+</script>
+<br>
+
+<p><b>Creating a for loop.</b></p>
+<p>let text = ""; <br>
+
+for (i = 0; i < 6; i++) { <br>
+	 text += i + "<br>"; <br>
+}
+</p>
+
+<p id="demo8"></p>
+
+<script>
+let text = "";
+
+for (i = 0; i < 6; i++) {
+	 text += i + "<br>";
+}
+
+document.getElementById("demo8").innerHTML = text;
+</script>
+<br>
+
+<p><b>Creating a while loop.</b></p>
+<p>let space = ""; <br>
+let j = 10; <br>
+
+while(j <= 20) { <br>
+	space += j + "<br>"; <br>
+	j++; <br>
+}
+</p>
+
+<p id="demo9"></p>
+
+<script>
+let space = "";
+let j = 10;
+
+while(j <= 20) {
+	space += j + "<br>";
+	j++;
+}
+
+document.getElementById("demo9").innerHTML = space;
+</script>
+<br>
+
+<p><b>Looping through an array.</b></p>
+<p>let blank = ""; <br>
+let cars = ["BMW", "Volvo", "Jaguar", "Honda", "Mazda", "Ford", "Volkswagen"]; <br>
+
+for(x = 0; x < cars.length; x++) { <br>
+	blank += cars[x]; <br>
+}
+</p>
+
+<p id="demo10"></p>
+
+<script>
+let blank = "";
+let cars = ["BMW", "Volvo", "Jaguar", "Honda", "Mazda", "Ford", "Volkswagen"];
+
+for(x = 0; x < cars.length; x++) {
+	blank += cars[x];
+}
+
+document.getElementById("demo10").innerHTML = blank;
+</script>
+<br>
+
+<p><b>Breaking out of a loop.</b></p>
+<p>let empty = ""; <br>
+
+for(y = 0; y < 20; y++) { <br>
+	if(y === 7) { break }; <br>
+	empty += y + "<br>"; <br>
+}
+</p>
+
+<p id="demo11"></p>
+
+<script>
+let empty = "";
+
+for(y = 0; y < 20; y++) {
+	if(y === 7) { break };
+	empty += y + "<br>";
+}
+
+document.getElementById("demo11").innerHTML = empty;
+</script>
+<br>
+
+</body>
+</html>
