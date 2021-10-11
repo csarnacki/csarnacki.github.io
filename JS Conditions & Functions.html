@@ -1,0 +1,181 @@
+<! DOCTYPE html>
+<html>
+<body>
+<title>JS Condtionals& Functions</title>
+
+<h1>JavaScript Condtionals and Functions</h2>
+
+<p><b>Creating a condition using the <i>if</i> and <i>else</i> keywords.</b></p>
+<p>let num = 6; <br>
+
+if (num == 6) { <br>
+  mystery_num = "The mystery number is six."; <br>
+} else { <br>
+  mystery_num = "The mystery number is something else.";
+}
+</p>
+
+<p id="demo"></p>
+
+<script>
+let num = 6;
+
+if (num == 6) {
+  mystery_num = "The mystery number is six.";
+} else {
+  mystery_num = "The mystery number is something else.";
+}
+
+document.getElementById("demo").innerHTML = "Output: " + mystery_num;
+</script>
+
+<p><b>Creating a condition using the <i>if</i>, <i>else</i> and <i>else if</i> keywords.</b></p>
+<p>let day = "Sunday"; <br>
+
+if (day == "Monday") { <br>
+  dayOfWeek = "It's the beginning of the week."; <br>
+} else if (day == "Tuesday") { <br>
+  dayOfWeek = "It's still the beginning of the week but not as bad as Monday."; <br>
+} else if (day == "Wednesday") { <br>
+  dayOfWeek = "It's the middle of the week."; <br>
+} else if (day == "Thursday") { <br>
+  dayOfWeek = "It's getting close to the weekend."; <br>
+} else if (day == "Friday") { <br>
+  dayOfWeek = "The weekend is nearly here! I can't wait!"; <br>
+} else if (day == "Saturday") { <br>
+  dayOfWeek = "Horray! The weekend is finally here! I'm so excited!"; <br>
+} else if (day == "Sunday") { <br>
+  dayOfWeek = "It's still the weekend but I have to go back to work tomorrow."; <br>
+} else { <br>
+  dayOfWeek = "Please enter a valid day"; <br>
+}
+</p>
+
+<p id="demo1"></p>
+
+<script>
+let day = "Sunday";
+
+if (day == "Monday") {
+  dayOfWeek = "It's the beginning of the week.";
+} else if (day == "Tuesday") {
+  dayOfWeek = "It's still the beginning of the week but not as bad as Monday.";
+} else if (day == "Wednesday") {
+  dayOfWeek = "It's the middle of the week.";
+} else if (day == "Thursday") {
+  dayOfWeek = "It's getting close to the weekend.";
+} else if (day == "Friday") {
+  dayOfWeek = "The weekend is nearly here! I can't wait!";
+} else if (day == "Saturday") {
+  dayOfWeek = "Horray! The weekend is finally here! I'm so excited!";
+} else if (day == "Sunday") {
+  dayOfWeek = "It's still the weekend but I have to go back to work tomorrow.";
+} else {
+  dayOfWeek = "Please enter a valid day";
+}
+
+document.getElementById("demo1").innerHTML = "Output: " + dayOfWeek;
+</script>
+
+<p><b>Creating a condition using a switch.</b></p>
+<p>let temp = "hot"; <br>
+
+switch (temp) { <br>
+  case "hot": <br>
+    weather = "It's really hot and sunny out here! Better grab some shorts and sunglasses."; <br>
+	break; <br>
+  case "warm": <br>
+    weather = "It's pretty warm out today so I can wear a t shirt and shorts."; <br>
+	break; <br>
+  case "chilly": <br>
+    weather = "Brrr! It sure is getting cold and windy out gere. I should put a jacket on."; <br>
+	break; <br>
+  case "cold": <br>
+    weather = "It's freezing out here! I need s scarf and gloves to stay warm!"; <br>
+	break; <br>
+  case "rainy": <br>
+	weather = "I need to get an umbrella and rain boots if I want to go outside."; <br>
+	break; <br>
+  default: <br>
+    weather = "I think I'll just stay inside today."; <br>
+} 
+</p>
+
+<p id="demo2"></p>
+
+<script>
+let temp = "hot";
+
+switch (temp) {
+  case "hot":
+    weather = "It's really hot and sunny out here! Better grab some shorts and sunglasses.";
+	break;
+  case "warm":
+    weather = "It's pretty warm out today so I can wear a t shirt and shorts.";
+	break;
+  case "chilly":
+    weather = "Brrr! It sure is getting cold and windy out gere. I should put a jacket on.";
+	break;
+  case "cold":
+    weather = "It's freezing out here! I need s scarf and gloves to stay warm!";
+	break;
+  case "rainy":
+	weather = "I need to get an umbrella and rain boots if I want to go outside.";
+	break;
+  default:
+    weather = "I think I'll just stay inside today.";
+}
+
+document.getElementById("demo2").innerHTML = "Output: " + weather;
+</script>
+
+<p><b>Creating a function.</b></p>
+<p>function favoriteDrink() { <br>
+  return ("Root Beer"); <br>
+}
+</p>
+
+<p id="demo3"></p>
+
+<script>
+function favoriteDrink() {
+  return ("Root Beer");
+}
+
+document.getElementById("demo3").innerHTML = "Output: " + favoriteDrink();
+</script>
+
+<p><b>Creating a function with a parameter and passing in a value.</b></p>
+<p>function myPet(name) { <br>
+  return ("I have a dog and her name is " + name + " and she is a black lab."); <br>
+}
+</p>
+
+<p id="demo4"></p>
+
+<script>
+function myPet(name) {
+  return ("I have a dog and her name is " + name + " and she is a black lab.");
+}
+
+document.getElementById("demo4").innerHTML = "Output: " + myPet("Pepper");
+</script>
+
+<p><b>Creating a function with a default parameter.</b></p>
+<p>function greet(name = "Stranger") { <br>
+   return ("Welcome " + name); <br>
+}
+</p>
+
+<p id="demo5"></p>
+
+<script>
+function greet(name = "Stranger") {
+   return ("Welcome " + name);
+}
+
+document.getElementById("demo5").innerHTML = "Output: " + greet("Jeff");
+</script>
+
+</body>
+</html>  

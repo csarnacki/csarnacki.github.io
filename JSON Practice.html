@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>JSON Practive</title>
+<body>
+<h1>JSON Practice</h1>
+
+<p><b>Extracting the data from the JSON.</b></p>
+<p>let place = '{"city": "Los Angeles", "state": "California", "country": "United States"}' <br>
+let obj = JSON.parse(place); 
+</p>
+
+<p id="demo1"></p>
+
+<script>
+let place = '{"city": "Los Angeles", "state": "California", "country": "United States"}'
+let obj = JSON.parse(place);
+
+document.getElementById("demo1").innerHTML = "Output: " + obj.city + " is a major city in " + obj.state;
+</script>
+
+<p><b>Creating the JSON from JavaScript.</b></p>
+<p>let object = {city: "Los Angeles", state: "California", country: "United States"}; <br>
+let newJSON = JSON.stringify(object);
+</p>
+
+<p id="demo2"></p>
+
+<script>
+let object = {city: "Los Angeles", state: "California", country: "United States"};
+let newJSON = JSON.stringify(object);
+
+document.getElementById("demo2").innerHTML = "Output: " + newJSON;
+</script>
+
+<br>
+<br>
+
+<p><b>Extracting the data from the JSON.</b></p>
+<p>let name = '{"name": "Javier", "age": "43", "residence": "Kansas City", "children": 3}' <br>
+let newObj = JSON.parse(name);
+</p>
+
+<p id="demo3"></p>
+
+<script>
+let name = '{"name": "Javier", "age": "43", "residence": "Kansas City", "children": 3}'
+let newObj = JSON.parse(name);
+
+document.getElementById("demo3").innerHTML = "Output: " + newObj.name + " is " + newObj.age + " years old. And he lives in " + newObj.residence + " and has " + newObj.children + " kids.";
+</script>
+
+<p><b>Creating the JSON from JavaScript.</b></p>
+<p>let info = {name: "Javier", age: 43, residence: "Kansas City", children: 3}; <br>
+let newData = JSON.stringify(info);
+</p>
+
+<p id="demo4"></p>
+
+<script>
+let info = {name: "Javier", age: 43, residence: "Kansas City", children: 3};
+let newData = JSON.stringify(info);
+
+document.getElementById("demo4").innerHTML = "Output: " + newData;
+</script>
+
+<br>
+<br>
+
+<p><b>Extracting the data from the JSON.</b></p>
+<p>let data = '{"firstName": "Edward", "lastName": "Mullen", "age": "34", "address": "123 Main Street", "city": "Chicago", "state": "Illinois", "zipCode": "60007", "phoneNumber": "555-555-5555","socialSecurity": "123-45-6789", "married": "yes", "numOfKids": "2","currentEmployer": "Professor at Northwestern University"}' <br>
+let getData = JSON.parse(data);
+</p>
+
+<p id="demo5"></p>
+
+<script>
+let data = '{"firstName": "Edward", "lastName": "Mullen", "age": "34", "address": "123 Main Street", "city": "Chicago", "state": "Illinois", "zipCode": "60007", "phoneNumber": "555-555-5555","socialSecurity": "123-45-6789", "married": "yes", "numOfKids": "2","currentEmployer": "Professor at Northwestern University"}'
+let getData = JSON.parse(data);
+
+document.getElementById("demo5").innerHTML = "Output: " + getData.firstName + " " + getData.lastName + " " + getData.address + " " + getData.phoneNumber + " " + getData.currentEmployer;
+</script>
+
+<p><b>Creating the JSON from JavaScript.</b></p>
+<p>let jsData = {firstName: "Edward", lastName: "Mullen", age: 34, address: "123 Main Street", city: "Chicago", state: "Illinois", zipCode: 60007, phoneNumber: 555-555-5555, socialSecurity: 123-45-6789, married: "yes", numOfKids: 2, currentEmployer: "Professor at Northwestern University"}; <br>
+let storeData = JSON.stringify(jsData);
+</p>
+
+<p id="demo6"></p>
+
+<script>
+let jsData = {firstName: "Edward", lastName: "Mullen", age: 34, address: "123 Main Street", city: "Chicago", state: "Illinois", zipCode: 60007, phoneNumber: 555-555-5555, socialSecurity: 123-45-6789, married: "yes", numOfKids: 2, currentEmployer: "Professor at Northwestern University"};
+let storeData = JSON.stringify(jsData);
+
+document.getElementById("demo6").innerHTML = "Output: " + storeData;
+</script>
+
+</body>
+</html>
